@@ -1,0 +1,52 @@
+.grid-view-container {
+  margin: 0 auto;
+  padding: 1rem;
+
+  div:first-child.table-responsive {
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 0.5rem 1rem;
+      background-color: #fff;
+
+      &:first-child,
+      &:first-child {
+        position: sticky;
+        left: 0px;
+      }
+
+      label.badge {
+        width: 100%;
+        height: 100%;
+      }
+
+      label.badge-danger {
+        background-color: #f9d3da;
+        color: #dc3545;
+      }
+
+      label.badge-success {
+        background-color: #cbfbeb;
+        color: #28a745;
+      }
+    }
+    thead {
+      th {
+        min-width: 150px;
+        &:first-child {
+          border: none;
+        }
+      }
+    }
+  }
+}
