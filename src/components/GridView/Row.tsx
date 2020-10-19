@@ -13,6 +13,7 @@ const Row = ({ headerCell, cells }: IRowType) => {
       <th scope="col">{Countries[headerCell.value]}</th>
       {cells.map((item: any, index: number) => {
         return (
+          item &&
           <td key={index}>
             <label
               htmlFor=""
